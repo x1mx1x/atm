@@ -9,7 +9,7 @@ namespace ATM.Models
     {
         public int Id { get; set; }
         public DateTime Time { get; set; }
-
+        //comment
         public int OperationCodeId { get; set; }
         public OperationCode OperationCode { get; set; }
         public int CardId { get; set; } // внешний ключ
