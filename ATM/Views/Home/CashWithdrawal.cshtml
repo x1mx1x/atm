@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "StartPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="medium-space-bottom">
+    <div class="position-center ">
+        <p class="label2"><br /><br />Введите сумму: </p>
+        <input id="input3" class="input2" placeholder="0" name="withdrawal" readonly>
+    </div>
+    <table class="position-center">
+        <tr>
+            <td><button class="button fade b2">1</button></td>
+            <td><button class="button fade b2">2</button></td>
+            <td><button class="button fade b2">3</button></td>
+        </tr>
+        <tr>
+            <td><button class="button fade b2">4</button></td>
+            <td><button class="button fade b2">5</button></td>
+            <td><button class="button fade b2">6</button></td>
+        </tr>
+        <tr>
+            <td><button class="button fade b2">7</button></td>
+            <td><button class="button fade b2">8</button></td>
+            <td><button class="button fade b2">9</button></td>
+        </tr>
+        <tr>
+            <td><button class="button fade2 btn1">X</button></td>
+            <td><button class="button fade b2">0</button></td>
+            <td><button id="btn5" class="button fade">OK</button></td>
+        </tr>
+    </table>
+    <form asp-action="StartPage">
+        <div id="div-button">
+            <button class="button2 fade2 small-space-top">Выход</button>
+        </div>
+    </form>
+</div>
+

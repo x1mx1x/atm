@@ -1,0 +1,35 @@
+﻿@model ATM.Models.Card
+@{
+    ViewData["Title"] = "StartPage";
+}
+
+    <div class="medium-space-bottom">
+        <div class="position-center ">
+            <p class="label1">Добро пожаловать!<br /><br /></p>
+            <p class="label2">Введите номер карты:</p>
+            <input class="input1" placeholder=". . . . - . . . . - . . . . - . . . ." name="CardNumber" readonly>
+
+        </div>
+        <table class="position-center">
+            <tr>
+                <td><button class="button fade b1">1</button></td>
+                <td><button class="button fade b1">2</button></td>
+                <td><button class="button fade b1">3</button></td>
+            </tr>
+            <tr>
+                <td><button class="button fade b1">4</button></td>
+                <td><button class="button fade b1">5</button></td>
+                <td><button class="button fade b1">6</button></td>
+            </tr>
+            <tr>
+                <td><button class="button fade b1">7</button></td>
+                <td><button class="button fade b1">8</button></td>
+                <td><button class="button fade b1">9</button></td>
+            </tr>
+            <tr>
+                <td><button class="button fade2 btn1">X</button></td>
+                <td><button class="button fade b1">0</button></td>
+                <td><button id="btn2" class="button fade">OK</button></td>
+            </tr>
+        </table>
+    </div>

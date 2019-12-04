@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p class="label">Текущая дата: @DateTime.Now.ToShortDateString()</p>
+
+<div class="gorizontal-center small-space-top">
+    <p class="label2">Снятие денег с карты </p>
+    <p class="label2">@ATM.Controllers.HomeController.CurrentCardNumber </p>
+    <p class="label2">прошло успешно! </p>
+</div>
+<div class="position-center height2">
+    <p class="info-label2">Снято: @ATM.Controllers.HomeController.WasWithdrawn грн<br />Остаток: @ATM.Controllers.HomeController.CurrentCardBalance грн</p>
+
+    <button class="button2 fade2 small-space-top" id="btn4">Назад</button>
+    <form asp-action="StartPage">
+        <button class="button2 fade2 small-space-top">Выход</button>
+    </form>
+
+</div>
